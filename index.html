@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My AWS Website</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.07);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      padding: 50px 60px;
+      max-width: 600px;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    }
+
+    .aws-badge {
+      display: inline-block;
+      background: #FF9900;
+      color: #232F3E;
+      font-weight: 700;
+      font-size: 13px;
+      padding: 5px 14px;
+      border-radius: 20px;
+      letter-spacing: 1px;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      background: linear-gradient(90deg, #FF9900, #ffcc66);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .emoji { font-size: 2rem; margin-bottom: 12px; display: block; }
+
+    p {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.7;
+      margin-bottom: 12px;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      margin: 28px 0;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 8px;
+    }
+
+    .info-box {
+      background: rgba(255,153,0,0.1);
+      border: 1px solid rgba(255,153,0,0.25);
+      border-radius: 12px;
+      padding: 16px 12px;
+    }
+
+    .info-box .label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #FF9900;
+      margin-bottom: 6px;
+    }
+
+    .info-box .value {
+      font-size: 0.95rem;
+      color: white;
+      font-weight: 500;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.35);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <span class="aws-badge">☁️ AWS S3 Hosted</span>
+    <span class="emoji">🚀</span>
+    <h1>Hello AWS!</h1>
+    <p>This is my first static website hosted on Amazon S3.</p>
+    <p>Built as part of the AWS Cloud Assignment — demonstrating static website hosting using S3 buckets and bucket policies.</p>
+
+    <hr class="divider"/>
+
+    <div class="info-grid">
+      <div class="info-box">
+        <div class="label">Service Used</div>
+        <div class="value">Amazon S3</div>
+      </div>
+      <div class="info-box">
+        <div class="label">Hosting Type</div>
+        <div class="value">Static Website</div>
+      </div>
+      <div class="info-box">
+        <div class="label">Access</div>
+        <div class="value">Public URL</div>
+      </div>
+      <div class="info-box">
+        <div class="label">Technology</div>
+        <div class="value">HTML + CSS</div>
+      </div>
+    </div>
+
+    <footer>Deployed on AWS S3 | Assignment 2</footer>
+  </div>
+</body>
+</html>
